@@ -13,5 +13,11 @@ tracked by => user-id once enrolled
 * Number of clicks: invariant
 * Click-through-probability: 
 * Gross conversion: evaluation
-* Retention: evaluation
+* Retention: 
 * Net conversion: evaluation
+
+Bonferroni: No, because the three evaluation metrics are likely covariant.
+the practical significance boundary is 1% given previous work during the lessons
+
+sample size calculator
+	http://www.evanmiller.org/ab-testing/sample-size.html
