@@ -2,7 +2,7 @@
 
 
 ## Project details
-The project takes place in the Udacity webpage and the objective is to measure the impact of a change. 
+The project takes place in the Udacity web page and the objective is to measure the impact of a change. 
 This change is the way a user enrolls into a free trial.
 unit of diversion => cookie
 tracked by => user-id once enrolled
