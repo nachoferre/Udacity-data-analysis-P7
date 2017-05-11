@@ -16,8 +16,4 @@ tracked by => user-id once enrolled
 * Retention: 
 * Net conversion: evaluation
 
-Bonferroni: No, because the three evaluation metrics are likely covariant.
-the practical significance boundary is 1% given previous work during the lessons
-
-sample size calculator
-	http://www.evanmiller.org/ab-testing/sample-size.html
+If you want to find the whole project it can be found in Final Project.md and/or Final Project.pdf

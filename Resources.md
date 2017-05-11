@@ -6,3 +6,5 @@
 * https://discussions.udacity.com/t/effect-size-tests-final-project/34642/6
 * https://discussions.udacity.com/t/effect-size-tests-caluclation-of-gross-conversions-confidence-interval/27181/24
 * https://levlaz.org/convert-markdown-to-pdf-in-sublime-text/
+* https://github.com/cben/mathdown/wiki/math-in-markdown
+* https://en.wikibooks.org/wiki/LaTeX/Mathematics
