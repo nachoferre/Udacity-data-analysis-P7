@@ -26,19 +26,19 @@ For this project had these features available to choose to be either our invaria
 
 Before starting reasoning why each metric is which, we are going to give some general rules about how to choose each metric. For invariant metrics they should happen before the change introduced by the experiment, therefore they should not influenced by it. Finally for evaluation metrics must have the opposite conditions.
 
-The Number of Cookies wasn't chosen to be an evaluation metric given that it provides little information just by itself to be able to see if the experiment is taking any effect. However as an invariant it provides the possibility to make sanity check because the evaluation metrics rely on this and it is a population sizing metric. 
+The Number of Cookies wasn't chosen to be an evaluation metric given that it provides little information just by itself to be able to see if the experiment is taking any effect. However as an invariant it provides the possibility to make sanity check because the evaluation metrics rely on this and it is a population sizing metric and it remains unaffected by the experiment. 
 
 The Number of User-ids doesn't provide any information alone and also we already have a population sizing metric that measures better the number of people to interact with our test. It could have been a good evaluation metric given that it could keep track of part of the hypothesis but it is not the best metric.This is due to the fact that it is not normalized like Gross or Net Conversion which we will talk in the following paragraphs.
 
-The Number of Clicks has been chosen to be an invariant metric because it directly affects the evaluation metrics so this provides a good way to measure the population sizing. I haven't considered it to be a possible evaluation metric given that it doesn't provide enough information by itself to decide if we have achieved our objective. 
+The Number of Clicks has been selected as an invariant metric because the data is received before the experiment takes place so it remains unaffected, making it a perfect invariant metric as explained in the previous paragraph. For the same reason it wasn't chosen to be an evaluation metric given that it doesn't provide any information about the effect on the experiment.
 
 The Click-through Probability has been chosen to be an invariant metric and not evaluation for the following reasons. First, It was chosen to be an invariant given that the probability it it not affected by the change which is an indicator of good invariant from what we said in the previous paragraphs. Second, it wast chosen as a invariant given that it didn't give any new information or possible control due to the fact that it is just a relationship between the already chosen invariants.
 
-The Gross Conversion has been chosen as an evaluation metric because it gives you a good proportion of users that enroll given the number of clicks. It is a good way to measure "how many users go down the funnel". It wasn't chose to be an invariant given that it was a really good evaluation metric. In order to launch the experiment we must look for an decrease in the experiment results.
+The Gross Conversion has been chosen as an evaluation metric because it gives you a good proportion of users that enroll given the number of clicks. It is a good way to measure "how many users go down the funnel". It wasn't chose to be an invariant given that it is affected by the experiment. In order to launch the experiment we must look for an decrease in the experiment results.
 
 The Retention seemed to be a great evaluation metric. However, after some calculations I found out that in order to use this metric we would have needed more than 3 months of study, which for an A/B test is too much time. It wasn't chosen to be a invariant metric given that it isn't a population sizing metric and it is a metric that we expect to change.
 
-Finally the Net Conversion was chosen to be an evaluation metric because it gives great insight about the engagement of the users to the course by measuring the proportion of users to keep working on the course past 14 days by the number of clicks. Also I didn't considered to be a invariant metric given that we expect it to change and it isn't a population sizing metric. In order to launch the experiment we are looking for an increase or no decrease in the experiment results. 
+Finally the Net Conversion was chosen to be an evaluation metric because it gives great insight about the engagement of the users to the course by measuring the proportion of users to keep working on the course past 14 days by the number of clicks. Also I didn't considered to be a invariant metric given that we expect it to change and it isn't a population sizing metric. In order to launch the experiment we expect the experiment results for the Net Conversion not to decrease. 
 
 To sum up the invariant and evaluation metric choices are the following:
 
@@ -134,7 +134,7 @@ More importantly This experiment will launch when all the evaluation metrics rej
 
 ## Recommendation
 
-Given the results obtained I would recommend launching the experiment. Due to the fact that both evaluation metrics behaved just as we were expected to. In the case of the Gross conversion it decreased as expected proving its statistical significance. In addition the Net conversion didn't show any decreasing tendency which means that the change would influence negatively on it. I must say that it would have been better to the experiment if the Net Conversion showed an increase, however it wasn't imperative that increase therefore rejecting the null too.
+Given the results obtained I would recommend not launching the experiment. Due to the fact that one of the evaluation metrics did not behave as we expected to. In the case of the Gross conversion it decreased as expected proving its statistical significance behaving as expected. However, the Net Conversion didn't show any statistical significance meaning there hasn't been any statistically significant change. However the confidence interval does include part of the negative boundary meaning that there is a possibility that the experiment could have a negative influence. This is why I recommend not launching.
 
 
 
@@ -154,9 +154,9 @@ The metrics that I would use for the realization of the project are:
 * Number of lessons passed: A count of all the lessons that have been passed
 * Number of participation in the forums:
 * User-ids: in order to keep track of all the users active.
-* Number of clicks in the forums link: in order to measure the number of people getting in to get help
 * Number of moths payed: Number of payments done
-* Ratio of number of clicks in the forum divided by the number of months payed. This could be a great evaluation metric and we would expect an increase to reject the null
+* Ratio of number of user-ids in the forum divided by the number of months payed. This could be a great evaluation metric and we would expect an increase to reject the null
+* Retention: I would choose this as an evaluation metric too
 
 For invariant metric I would use the number of enrollments a a population sizing metric.
 
